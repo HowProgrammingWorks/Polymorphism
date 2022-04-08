@@ -6,7 +6,7 @@ const rectangle = (height, width) => ({
   }
 });
 
-const circle = radius => ({
+const circle = (radius) => ({
   get area() {
     return Math.pow(radius, 2) * Math.PI;
   }
