@@ -2,7 +2,9 @@
 
 class Shape {
   get area() {
-    throw new Error('Method is not implemented');
+    if (this.constructor === Shape) {
+      throw new Error('Method is not implemented');
+    }
   }
 }
 

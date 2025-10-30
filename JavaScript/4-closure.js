@@ -3,13 +3,13 @@
 const rectangle = (height, width) => ({
   get area() {
     return height * width;
-  }
+  },
 });
 
 const circle = (radius) => ({
   get area() {
     return Math.pow(radius, 2) * Math.PI;
-  }
+  },
 });
 
 // Usage
