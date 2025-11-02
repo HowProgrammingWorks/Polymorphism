@@ -2,9 +2,8 @@
 
 class Shape {
   get area() {
-    if (this.constructor === Shape) {
-      throw new Error('Method is not implemented');
-    }
+    const { name } = this.constructor;
+    throw new Error(`Method "area" is not implemented in ${name}`);
   }
 }
 
