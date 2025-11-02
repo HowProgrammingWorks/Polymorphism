@@ -1,5 +1,7 @@
 'use strict';
 
+// Ad-hoc polymorphism: overloading emulation
+
 const getTypeName = (value) => {
   if (value instanceof Date) return 'Date';
   if (typeof value === 'number') return 'number';

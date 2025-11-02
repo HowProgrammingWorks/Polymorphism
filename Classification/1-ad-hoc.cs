@@ -1,7 +1,6 @@
 using System;
 
-// mcs 1-ad-hoc.cs
-// mono 1-ad-hoc.exe
+// Ad-hoc polymorphism: function overloading
 
 static class DateFormatter
 {

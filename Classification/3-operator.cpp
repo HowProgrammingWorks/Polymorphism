@@ -1,3 +1,5 @@
+// Ad-hoc polymorphism: operator overloading
+
 #include <cmath>
 #include <iostream>
 

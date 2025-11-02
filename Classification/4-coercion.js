@@ -1,5 +1,7 @@
 'use strict';
 
+// Сoercion polymorphism
+
 class RadiusVector {
   constructor(x, y) {
     this.x = x;
