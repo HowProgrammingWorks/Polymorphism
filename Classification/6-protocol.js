@@ -2,20 +2,13 @@
 
 // Subtype polymorphism: protocol/duck typing
 
-const describe = (entity) => {
-  if (typeof entity.describe !== 'function') {
-    throw new TypeError('Requires describe method');
-  }
-  entity.describe();
-};
-
 class SavingsAccount {
   constructor(balance) {
     this.balance = balance;
   }
 
   describe() {
-    console.log(`Savings -> Balance: ${this.balance}`);
+    return `Savings -> Balance: ${this.balance}`;
   }
 }
 
@@ -25,9 +18,24 @@ class CreditAccount {
   }
 
   describe() {
-    console.log(`Credit -> Balance: ${this.balance}`);
+    return `Credit -> Balance: ${this.balance}`;
   }
 }
 
-describe(new SavingsAccount(5000));
-describe(new CreditAccount(-750));
+const getInfo = (entity) => {
+  if (typeof entity.describe !== 'function') {
+    throw new TypeError('Requires describe method');
+  }
+  const res = entity.describe();
+  console.log(res);
+};
+
+const account = {
+  describe() {
+    return 'Stub account';
+  },
+};
+
+getInfo(account);
+getInfo(new SavingsAccount(5000));
+getInfo(new CreditAccount(-750));

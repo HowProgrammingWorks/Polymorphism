@@ -18,8 +18,8 @@ class CreditAccount extends Account {
   }
 }
 
-const accounts: Account[] = [new SavingsAccount(5000), new CreditAccount(-750)];
+const a1 = new SavingsAccount(5000);
+console.log(a1.describe());
 
-for (const account of accounts) {
-  console.log(account.describe());
-}
+const a2 = new CreditAccount(-750);
+console.log(a2.describe());
