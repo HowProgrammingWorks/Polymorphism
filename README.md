@@ -13,9 +13,9 @@
   - Class inheritance - IS-A relationship via base classes: [`5-abstract.ts`](Classification/5-abstract.ts)
   - Interface / protocol polymorphism - Contracts that types must implement: [`6-protocol.js`](Classification/6-protocol.js)
   - Structural (duck typing) polymorphism - Compatibility based on structure, not explicit inheritance: [`6-protocol.js`](Classification/6-protocol.js)
-3. Parametric polymorphism - Code written generically to work with any type (examples will be added ASAP)
-  - Generic functions - Functions parameterized by types
-  - Generic data structures - Data structures parameterized by types
+3. Parametric polymorphism - Code written generically to work with any type
+  - Generic functions - Functions parameterized by types: JS [`9-generics.ts`](Classification/9-generics.ts)
+  - Generic data structures - Data structures parameterized by types: JS TS [`a-generics.js`](Classification/a-generics.js)
 4. Dispatch mechanisms - How the runtime selects which method to call
   - Dynamic dispatch - Method chosen at runtime based on object type: [`7-dynamic.js`](Classification/7-dynamic.js)
   - Virtual functions and methods - Base class methods overridable by derived classes: [`8-virtual.cpp`](Classification/8-virtual.cpp)
